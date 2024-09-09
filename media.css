@@ -1,0 +1,138 @@
+@media screen and (max-width:600px) {
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    
+
+    body{
+      overflow-x: hidden;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav a {
+      text-decoration: none;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      color: white;
+      margin-left: 30px;
+    }
+    a:hover {
+      color: darkmagenta;
+    }
+    nav {
+      height: 70px;
+      width: 100%;
+      outline: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .all {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .github {
+      padding: 12px;
+      border-radius: 20px;
+      background-color: transparent;
+      border: 2px solid violet;
+      color: darkorchid;
+      font-weight: bold;
+    }
+    .page-1{
+      height:fit-content;
+      width: 100%;
+      display: flex;
+      flex-direction:column-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      background-color: black;
+    }
+    .page-1-text-part{
+      height: fit-content;
+      width: 300px;
+    }
+    .page-1-text-part h1{
+      color: wheat;
+      font-family: Inter;
+      font-size: 2rem;
+    }
+    .page-1-text-part p{
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1.6rem;
+    }
+    .page-1-image-part{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      background-image: url('me.jpeg');
+      background-position: center;
+      background-size: cover;
+      box-shadow: 2px 2px 30px rgb(116, 11, 191),
+      1px 1px 10px rgb(116, 11, 191);
+      margin-top: 2rem;
+    }
+    .cv{
+      height: 3rem;
+      width: 140px;
+      background-color: rgb(116, 11, 191);
+      border: none;
+      text-align: center;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    .cv {
+      text-decoration: none;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    .page-2 h2{
+      color: white;
+      font-size: 3rem;
+      letter-spacing: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .skills-section{
+      height:fit-content;
+      width: 100%;
+      background-color: black;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+    .first-section{
+      height: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    .frontend{
+      height: 300px;
+      width: 300px;
+      outline: auto;
+    }
+    .backend{
+      height: 300px;
+      width: 300px;
+      outline: auto;
+    }
+ 
+
+}
