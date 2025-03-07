@@ -13,6 +13,29 @@ const projects = [
       "Building modern applications that scale well and are easy to maintain. Cutting edge websites with a pinch of magic, and a lot of love.",
     tags: ["Next.js", "React", "TailwindCSS", "Full-Stack"],
   },
+  {
+    title: "Aceternity",
+    description:
+      "Building modern applications that scale well and are easy to maintain. Cutting edge websites with a pinch of magic, and a lot of love.",
+    tags: ["Next.js", "React", "TailwindCSS", "Full-Stack"],
+  },
+  {
+    title: "Aceternity",
+    description:
+      "Building modern applications that scale well and are easy to maintain. Cutting edge websites with a pinch of magic, and a lot of love.",
+    tags: ["Next.js", "React", "TailwindCSS", "Full-Stack"],
+  }, {
+    title: "Aceternity",
+    description:
+      "Building modern applications that scale well and are easy to maintain. Cutting edge websites with a pinch of magic, and a lot of love.",
+    tags: ["Next.js", "React", "TailwindCSS", "Full-Stack"],
+  },
+  {
+    title: "Aceternity",
+    description:
+      "Building modern applications that scale well and are easy to maintain. Cutting edge websites with a pinch of magic, and a lot of love.",
+    tags: ["Next.js", "React", "TailwindCSS", "Full-Stack"],
+  },
 ];
 
 const ProjectCard = ({ title, description, tags }) => {
@@ -54,7 +77,8 @@ const ProjectCard = ({ title, description, tags }) => {
 
 const ProjectsSection = () => {
   return (
-    <section className="md:p-6 p-4 text-white md:w-3xl">
+    <>
+    <section className="md:p-6  text-white md:w-3xl">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-6">Projects</h2>
         <div className="grid md:grid-cols-2 gap-6 grid-cols-1">
@@ -63,7 +87,10 @@ const ProjectsSection = () => {
           ))}
         </div>
       </div>
+
     </section>
+    <a className="text-white font-medium">See More Projects</a>
+    </>
   );
 };
 
