@@ -6,7 +6,7 @@ import ProjectsSection from './components/Projects'
 function App() {
   return (
     <>
-    <div className='min-h-screen w-full bg-zinc-900 flex items-center  flex-col'>
+    <div className='max-h-screen w-full bg-zinc-900 flex items-center  flex-col'>
       <Navbar/>
       <Intro/>
       <ProjectsSection/>
