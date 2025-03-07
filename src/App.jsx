@@ -9,7 +9,7 @@ function App() {
     <>
       <Navbar />
       <div className="bg-zinc-900 min-h-screen">
-        <div className="h-full">
+        <div className="h-full flex  flex-col items-center">
           <Intro />
           {/* <ProjectsSection />
           <UpcomingProjects /> */}
