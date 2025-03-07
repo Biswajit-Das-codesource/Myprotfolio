@@ -25,8 +25,8 @@ function Intro() {
     <div className="w-full max-w-3xl h-max justify-between text-white p-8 rounded-lg flex flex-col items-center md:items-start">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start w-full">
         <div className="heading text-center md:text-left">
-          <h1 className="text-3xl md:text-4xl font-bold">Biswajit Das</h1>
-          <p className="text-lg mt-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-left">Biswajit Das</h1>
+          <p className="text-lg mt-2 text-left">
             Building{" "}
             <span className="bg-gray-700 px-2 py-1 rounded-md font-semibold">
               Aceternity
