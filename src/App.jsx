@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <div className=' bg-zinc-900'>
-    <div className='min-h-screen'>
+    <div className='h-full min-h-screen'>
       <Navbar/>
       <Intro/>
       {/* <ProjectsSection/>
