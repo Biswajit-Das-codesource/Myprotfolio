@@ -25,7 +25,9 @@ function Intro() {
     <div className="w-full max-w-3xl h-max justify-between text-white p-8 rounded-lg flex flex-col items-center md:items-start">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start w-full">
         <div className="heading text-center md:text-left">
-          <h1 className="text-3xl md:text-4xl font-bold text-left">Biswajit Das</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-left">
+            Biswajit Das
+          </h1>
           <p className="text-lg mt-2 text-left">
             Building{" "}
             <span className="bg-gray-700 px-2 py-1 rounded-md font-semibold">
@@ -58,9 +60,11 @@ function Intro() {
         <span className="font-bold text-white cursor-pointer"> Github</span>,
         <span className="font-bold text-white cursor-pointer"> Twitter</span>.
       </p>
-      <div className="connections flex items-center gap-2 border w-max p-2 mt-4 rounded-2xl cursor-pointer">
-        View Resume
-        <FaGoogleDrive />
+      <div className="w-full">
+        <div className="connections flex items-center gap-2 border w-max p-2 mt-4 rounded-2xl cursor-pointer">
+          View Resume
+          <FaGoogleDrive />
+        </div>
       </div>
       <div className="flex flex-wrap gap-2 mt-6">
         <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm ">
