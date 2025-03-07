@@ -56,7 +56,7 @@ const ProjectCard = ({ title, description, tags }) => {
 const UpcomingProjects = () => {
   return (
     <>
-    <section className="md:p-6 p-3 text-white md:w-3xl">
+    <section className="md:p-6 p-3 text-white md:w-3xl bg-zinc-900">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-6">Upcoming Projects</h2>
         <div className="grid md:grid-cols-2 gap-6 grid-cols-1">
