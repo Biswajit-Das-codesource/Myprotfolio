@@ -9,7 +9,7 @@ function App() {
     <>
     <Navbar/>
     <div className=' bg-zinc-900'>
-    <div className='h-full min-h-screen'>
+    <div className='h-full max-h-screen'>
       <Intro/>
       {/* <ProjectsSection/>
       <UpcomingProjects/> */}
