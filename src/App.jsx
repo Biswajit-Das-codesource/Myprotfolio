@@ -7,9 +7,9 @@ import UpcomingProjects from './components/UpcomingProjects'
 function App() {
   return (
     <>
+    <Navbar/>
     <div className=' bg-zinc-900'>
     <div className='h-full min-h-screen'>
-      <Navbar/>
       <Intro/>
       {/* <ProjectsSection/>
       <UpcomingProjects/> */}
