@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Intro from './components/Intro'
+import ProjectsSection from './components/Projects'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
     <div className='min-h-screen w-full bg-zinc-900 flex items-center  flex-col'>
       <Navbar/>
       <Intro/>
+      <ProjectsSection/>
       </div>
     </>
   )

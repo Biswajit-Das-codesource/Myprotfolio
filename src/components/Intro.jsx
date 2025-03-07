@@ -61,12 +61,12 @@ function Intro() {
         <span className="font-bold text-white cursor-pointer"> Twitter</span>.
       </p>
       <div className="w-full">
-        <div className="connections flex items-center gap-2 border w-max p-2 mt-4 rounded-2xl cursor-pointer">
+        <div className="connections flex items-center gap-2 border w-max p-2 mt-4 rounded-2xl cursor-pointer font-medium">
           View Resume
           <FaGoogleDrive />
         </div>
       </div>
-      <div className="flex flex-wrap gap-2 mt-6">
+      <div className="flex flex-wrap gap-2 mt-8">
         <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm ">
           <FaJs className="w-4 h-4" /> Javascript
         </span>
