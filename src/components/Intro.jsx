@@ -79,24 +79,24 @@ function Intro() {
         <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
           <FaReact className="w-4 h-4" /> React.js
         </span>
-        <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
+        {/* <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
           <SiNextdotjs className="w-4 h-4" /> Next.js
-        </span>
-        <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
+        </span> */}
+        {/* <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
           <FaReact className="w-4 h-4" /> React Native
-        </span>
+        </span> */}
         <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
           <FaNodeJs className="w-4 h-4" /> Express.js
         </span>
         <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
           <SiMongodb className="w-4 h-4" /> MongoDB
         </span>
-        <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
+        {/* <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
           <SiPostgresql className="w-4 h-4" /> Postgres
-        </span>
-        <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
+        </span> */}
+        {/* <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
           <SiPrisma className="w-4 h-4" /> Prisma
-        </span>
+        </span> */}
         <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
           <SiTailwindcss className="w-4 h-4" /> Tailwind
         </span>
@@ -104,7 +104,7 @@ function Intro() {
           <SiFramer className="w-4 h-4" /> Framer Motion
         </span>
         <span className="bg-gray-700 px-3 py-1 rounded-md flex items-center gap-2 text-sm">
-          OpenAI, Gemini, Claude, Prompt Engineering
+          OpenAI, Gemini, Prompt Engineering
         </span>
       </div>
     </div>

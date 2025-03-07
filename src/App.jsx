@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Intro from './components/Intro'
 import ProjectsSection from './components/Projects'
+import UpcomingProjects from './components/UpcomingProjects'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <Intro/>
       <ProjectsSection/>
+      <UpcomingProjects/>
       </div>
     </>
   )
