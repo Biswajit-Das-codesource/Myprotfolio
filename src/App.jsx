@@ -7,8 +7,8 @@ import UpcomingProjects from './components/UpcomingProjects'
 function App() {
   return (
     <>
-    <div className='bg-zinc-900'>
-    <div className=' w-full flex items-center  flex-col'>
+    <div className=' bg-zinc-900'>
+    <div className='h-full w-full flex items-center flex-col'>
       <Navbar/>
       <Intro/>
       <ProjectsSection/>
