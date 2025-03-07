@@ -10,8 +10,8 @@ function App() {
     <div className=' bg-zinc-900'>
     <div className=''>
       <Navbar/>
-      {/* <Intro/>
-      <ProjectsSection/>
+      <Intro/>
+      {/* <ProjectsSection/>
       <UpcomingProjects/> */}
       </div>
       </div>
