@@ -5,6 +5,9 @@ import {
   FaBriefcase,
   FaEnvelope,
   FaWhatsapp,
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
 } from "react-icons/fa";
 
 const projects = [
@@ -60,7 +63,7 @@ const UpcomingProjects = () => {
         </div>
       </section>
 
-      <div className="flex justify-center items-center min-h mt-10 bg-blhack text-white">
+      <div className="flex justify-center items-center min-h mt-10 bg-black text-white">
         <div className="bg-[#0f0f1a] md:px-50 p-6  rounded-xl shadow-xl w-full  text-center">
           <h2 className="text-xl font-bold">Get in Touch</h2>
           <p className="text-gray-400 mt-2">Let's discuss your project.</p>
@@ -105,6 +108,40 @@ const UpcomingProjects = () => {
           </div>
         </div>
       </div>
+      <nav className="w-full py-10 text-white text-center">
+      <p className="text-gray-300 text-base font-bold">Find me on:</p>
+      <div className="flex justify-center gap-6 mt-3">
+        {/* LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/your-profile"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-500 transition-all text-2xl"
+        >
+          <FaLinkedin />
+        </a>
+
+        {/* GitHub */}
+        <a
+          href="https://github.com/your-github"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-400 hover:text-gray-500 transition-all text-2xl"
+        >
+          <FaGithub />
+        </a>
+
+        {/* Instagram */}
+        <a
+          href="https://www.instagram.com/your-instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-pink-500 hover:text-pink-600 transition-all text-2xl"
+        >
+          <FaInstagram />
+        </a>
+      </div>
+    </nav>
     </>
   );
 };
