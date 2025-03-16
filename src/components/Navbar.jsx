@@ -6,7 +6,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="h-20 md:justify-around md:h-30 w-full bg-zinc-900 flex justify-between items-center px-6 md:px-10">
+    <div className="h-20 md:justify-around md:h-30 w-full bg-zinc-950 flex justify-between items-center px-6 md:px-10">
       {/* Logo / Icon */}
       <WiDaySunny className="text-cyan-400 text-4xl cursor-pointer border rounded-xl p-1" />
 

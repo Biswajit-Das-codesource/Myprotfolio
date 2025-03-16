@@ -22,7 +22,7 @@ import profilePic from "./me.jpeg"; // Ensure the correct path to the profile pi
 
 function Intro() {
   return (
-    <div className="w-full max-w-3xl h-max justify-between text-white p-8 flex flex-col items-center md:items-start bg-zinc-900 pt-4">
+    <div className="w-full max-w-3xl h-max justify-between text-white p-8 flex flex-col items-center md:items-start bg-zinc-950 pt-6">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start w-full">
         <div className="heading text-center md:text-left">
           <h1 className="text-3xl md:text-4xl font-bold text-left">
