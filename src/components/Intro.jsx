@@ -62,9 +62,15 @@ function Intro() {
         <br />
         <br />
         You can find me on{" "}
-        <span className="font-bold  cursor-pointer">LinkedIn</span>,
-        <span className="font-bold  cursor-pointer"> Github</span>,
-        <span className="font-bold  cursor-pointer"> Twitter</span>.
+        <a href="https://www.linkedin.com/in/biswajitdas-/">
+        <span className="font-bold  cursor-pointer">LinkedIn</span>
+        </a>,
+        <a href="https://github.com/Biswajit-Das-codesource">
+        <span className="font-bold  cursor-pointer"> Github</span>
+        </a>,
+        <a href="https://x.com/BISWAJITDA42361">
+        <span className="font-bold  cursor-pointer"> Twitter</span>
+        </a>.
       </p>
       <div className="w-full">
         <a href="https://drive.google.com/file/d/1QF3ce-MVp7fx5C7QQP_YcYgLqUAx0Ju7/view?usp=drive_link">
@@ -82,7 +88,7 @@ function Intro() {
         >
           <FaJs className="w-4 h-4" /> Javascript
         </span>
-       
+
         <span
           className={`${
             !theme ? "bg-zinc-300 text-black" : "bg-gray-700 text-white"
@@ -133,7 +139,6 @@ function Intro() {
         >
           <DiNodejsSmall className="w-4 h-4" /> Node.js
         </span>
-          
       </div>
     </div>
   );
