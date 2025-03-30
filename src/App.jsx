@@ -8,13 +8,10 @@ import { Outlet } from 'react-router'
 
 function App() {
   const theme = useSelector((store)=>store.app.theme)
-
-
   return (
     <>
       <Navbar />
       <Outlet/>
-     
     </>
   )
 }

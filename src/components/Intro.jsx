@@ -35,7 +35,7 @@ function Intro() {
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start w-full">
         <div className="heading text-center md:text-left">
           <h1 className="text-3xl md:text-4xl font-bold text-left">
-            Biswajit Das
+            Biswajit Das 
           </h1>
           <p className="text-lg mt-2 text-left font-semibold">
             Full-Stack Developer | UI/UX & Python Enthusiast | Always Learning &
@@ -61,7 +61,7 @@ function Intro() {
         web technologies, I enjoy every aspect of development.
         <br />
         <br />
-        You can find me on{" "}
+        You can find me on
         <a href="https://www.linkedin.com/in/biswajitdas-/">
         <span className="font-bold  cursor-pointer">LinkedIn</span>
         </a>,
