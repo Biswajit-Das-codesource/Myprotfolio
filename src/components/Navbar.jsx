@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { IoMoonOutline } from "react-icons/io5";
 import { changeTheme } from "../redux/Slice";
 import { Link } from "react-router";
-
+import { motion } from "framer-motion";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [themes, setthemes] = useState(true);
@@ -18,10 +18,13 @@ function Navbar() {
 
   return (
     <>
-      <div
-        className={`h-20 md:justify-around md:h-30 w-full ${
+      <motion.div
+        className={`h-20 fixed z-999 top-0 left-0 md:justify-around md:h-25 w-full ${
           theme ? "bg-zinc-950" : "bg-white"
         } flex justify-between items-center px-6 md:px-10`}
+        initial={{ y: -80, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         {/* Logo / Icon */}
 
@@ -49,6 +52,9 @@ function Navbar() {
           <li className="hover:text-cyan-300">
             <Link to="/projects">Projects</Link>
           </li>
+          <li className="hover:text-cyan-300">
+            <Link to="/projects">About</Link>
+          </li>
           {/* <li className="hover:text-cyan-300">Resources</li> */}
         </ul>
 
@@ -69,34 +75,36 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <ul
+          <motion.ul
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4 }}
             className={`absolute top-16 left-0 w-full ${
-              theme ? "bg-black text-white" : "bg-zinc-900"
-            }  flex flex-col items-center gap-4 py-4 text-white font-medium md:hidden`}
+              theme ? "bg-black text-white" : "bg-white text-black"
+            } flex flex-col items-center gap-4 py-4 font-medium md:hidden`}
           >
             <li
               className="hover:text-cyan-300"
               onClick={() => setMenuOpen(false)}
             >
-              <Link to="/"> Home</Link>
+              <Link to="/">Home</Link>
             </li>
-
             <li
               className="hover:text-cyan-300"
               onClick={() => setMenuOpen(false)}
             >
               <Link to="/projects">Projects</Link>
             </li>
-
-            {/* <li
+            <li
               className="hover:text-cyan-300"
               onClick={() => setMenuOpen(false)}
             >
-              Resources
-            </li> */}
-          </ul>
+              <Link to="/about">About</Link>
+            </li>
+          </motion.ul>
         )}
-      </div>
+      </motion.div>
     </>
   );
 }

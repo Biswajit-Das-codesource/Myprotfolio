@@ -1,1 +1,10 @@
 @import "tailwindcss";  
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}

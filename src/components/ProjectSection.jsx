@@ -10,9 +10,8 @@ import {
   SiNodedotjs,
 } from "react-icons/si";
 import { useSelector } from "react-redux";
-import { Link } from "react-router";
-import { motion } from "framer-motion";
-
+import { FaGithub } from "react-icons/fa";
+import ScrollToTop from "./ScrollToTop";
 const projects = [
   {
     title: "Webby AI",
@@ -145,13 +144,14 @@ const getTagIcon = (tag) => {
   }
 };
 
-const ProjectsSection = () => {
+const ProjectShowcase = () => {
   const theme = useSelector((store) => store.app.theme);
 
   return (
     <>
+    <ScrollToTop/>
       <div
-        className={`min-h-screen w-full ${
+        className={`min-h-screen w-full mt-25 pb-7 ${
           !theme ? "bg-white" : "bg-zinc-950"
         } flex justify-center items-center flex-col`}
       >
@@ -168,34 +168,26 @@ const ProjectsSection = () => {
             >
               Projects
             </h2>
-            <div className="grid md:grid-cols-2 gap-6 grid-cols-1">
+            <p className="text-gray-400 text-base">
+              I love building things and learning along the way—whether it's a
+              client project, a course assignment, or just experimenting for
+              fun. Always picking up something new.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 grid-cols-1 mt-7">
               {projects.map((project, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: false, amount: 0.3 }}
-                >
-                  <ProjectCard {...project} />
-                </motion.div>
+                <ProjectCard key={index} {...project} />
               ))}
             </div>
           </div>
         </section>
         <div>
-          <Link to="/projects">
-            <a className="text-white font-medium flex justify-center items-center p-4">
-              See More Projects{" "}
-              <span>
-                <IoIosArrowDown className="mt-1 ml-1" />
-              </span>
-            </a>
-          </Link>
+        
         </div>
+
+        <button className="text-white border border-gray-400 rounded-3xl py-3 px-5 flex justify-center items-center gap-2 cursor-pointer">See all at <FaGithub size={"1.5rem"}/></button>
       </div>
     </>
   );
 };
 
-export default ProjectsSection;
+export default ProjectShowcase;

@@ -29,16 +29,28 @@ const projects = [
 ];
 
 const ProjectCard = ({ title, description, tags, icon }) => {
-  
-  const theme = useSelector(store=>store.app.theme)
+  const theme = useSelector((store) => store.app.theme);
 
   return (
-    <div className={`relative p-5 rounded-xl border border-gray-700 overflow-hidden shadow-xs shadow-cyan-500/50 cursor-pointer ${theme ? "bg-gray-950" : "bg-white text-black" }`}>
-      <div className="flex items-center gap-2 mb-2 text-white">
+    <div
+      className={`relative pt-10 p-6 rounded-xl border border-gray-700 overflow-hidden shadow-xs shadow-cyan-500/50 cursor-pointer min-h-[250px] ${
+        theme ? "" : "bg-white text-black"
+      }`}
+    >
+      <div className="flex flex-col gap-4 mb-2 text-white">
         <span>{icon}</span>
-        <h3 className={`text-base font-semibold ${theme ? "text-white " : "text-black" }`}>{title}</h3>
+        <div className="flex flex-col">
+          <h3
+            className={`text-lg font-bold ${
+              theme ? "text-white " : "text-black"
+            }`}
+          >
+            {title}
+          </h3>
+          <p className="mb-3 mt-4 text-base text-gray-400">{description}</p>
+        </div>
+        
       </div>
-      <p className="mb-4 text-base">{description}</p>
       <div className="flex flex-wrap gap-2">
         {tags.map((tag, index) => (
           <span
@@ -54,13 +66,23 @@ const ProjectCard = ({ title, description, tags, icon }) => {
 };
 
 const UpcomingProjects = () => {
-  const theme = useSelector(store=>store.app.theme)
+  const theme = useSelector((store) => store.app.theme);
 
   return (
     <>
-      <section className={`md:p-6 p-3 text-white md:w-3xl ${theme ? "bg-zinc-950" : "bg-white" } min-h`}>
+      <section
+        className={`md:p-6 p-3 text-white md:w-3xl ${
+          theme ? "bg-zinc-950" : "bg-white"
+        } min-h`}
+      >
         <div className="container mx-auto px-4">
-          <h2 className={`text-3xl font-bold mb-6 ${!theme ? "text-black" : "text-white"}`}>Upcoming Projects</h2>
+          <h2
+            className={`text-3xl font-bold mb-6 ${
+              !theme ? "text-black" : "text-white"
+            }`}
+          >
+            Upcoming Projects
+          </h2>
           <div className="grid md:grid-cols-2 gap-6 grid-cols-1">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
@@ -69,8 +91,14 @@ const UpcomingProjects = () => {
         </div>
       </section>
 
-      <div className={`flex justify-center items-center min-h mt-10  text-white`}>
-        <div className={`${!theme ? "bg-white text-black" : "bg-[#0f0f1a]"} md:px-50 p-6  rounded-xl shadow-xl w-full  text-center`}>
+      <div
+        className={`flex justify-center items-center min-h mt-10  text-white`}
+      >
+        <div
+          className={`${
+            !theme ? "bg-white text-black" : "bg-[#0f0f1a]"
+          } md:px-50 p-6  rounded-xl shadow-xl w-full  text-center`}
+        >
           <h2 className="text-xl font-bold">Get in Touch</h2>
           <p className="mt-2">Let's discuss your project.</p>
 
@@ -87,9 +115,7 @@ const UpcomingProjects = () => {
           <hr className="border-gray-600 my-5" />
 
           {/* Email Section */}
-          <p className="">
-            Drop an email, and I'll get back to you.
-          </p>
+          <p className="">Drop an email, and I'll get back to you.</p>
 
           {/* <div className="mt-3 flex items-center">
             <input
@@ -114,40 +140,50 @@ const UpcomingProjects = () => {
           </div>
         </div>
       </div>
-      <footer className={`${theme?"text-gray-300" : "text-black"} text-center w-full py-10 `}>
-      <p className={`${theme?"text-gray-300" : "text-black"} text-base font-bold`}>Find me on:</p>
-      <div className="flex justify-center gap-6 mt-3">
-        {/* LinkedIn */}
-        <a
-          href="https://www.linkedin.com/in/biswajitdas-/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className=" hover:text-blue-500 transition-all text-2xl"
+      <footer
+        className={`${
+          theme ? "text-gray-300" : "text-black"
+        } text-center w-full py-10 `}
+      >
+        <p
+          className={`${
+            theme ? "text-gray-300" : "text-black"
+          } text-base font-bold`}
         >
-          <FaLinkedin />
-        </a>
+          Find me on:
+        </p>
+        <div className="flex justify-center gap-6 mt-3">
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/biswajitdas-/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" hover:text-blue-500 transition-all text-2xl"
+          >
+            <FaLinkedin />
+          </a>
 
-        {/* GitHub */}
-        <a
-          href="https://github.com/Biswajit-Das-codesource"
-          target="_blank"
-          rel="noopener noreferrer"
-          className=" hover:text-gray-500 transition-all text-2xl"
-        >
-          <FaGithub />
-        </a>
+          {/* GitHub */}
+          <a
+            href="https://github.com/Biswajit-Das-codesource"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" hover:text-gray-500 transition-all text-2xl"
+          >
+            <FaGithub />
+          </a>
 
-        {/* Instagram */}
-        <a
-          href="https://www.instagram.com/its_biswajit._?igsh=MTE5eWNxb3AzdGJocQ=="
-          target="_blank"
-          rel="noopener noreferrer"
-          className=" hover:text-pink-600 transition-all text-2xl"
-        >
-          <FaInstagram />
-        </a>
-      </div>
-    </footer>
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/its_biswajit._?igsh=MTE5eWNxb3AzdGJocQ=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" hover:text-pink-600 transition-all text-2xl"
+          >
+            <FaInstagram />
+          </a>
+        </div>
+      </footer>
     </>
   );
 };

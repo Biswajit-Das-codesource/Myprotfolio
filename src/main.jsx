@@ -7,6 +7,7 @@ import store from "./redux/Store.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import ProjectsSection from "./components/Projects.jsx";
 import All from "./components/All.jsx";
+import ProjectShowcase from "./components/ProjectSection.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/projects",
-        element:<ProjectsSection/>
+        element:<ProjectShowcase/>
       }
     ]
   },
