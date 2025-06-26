@@ -110,13 +110,27 @@ function Intro() {
       </motion.p>
 
       <div className="w-full">
-        <a href="https://drive.google.com/file/d/1QF3ce-MVp7fx5C7QQP_YcYgLqUAx0Ju7/view?usp=drive_link">
-          <div className="connections flex items-center gap-2 border w-max p-2 mt-4 rounded-2xl cursor-pointer font-medium">
-            View Resume
-            <FaGoogleDrive />
-          </div>
-        </a>
-      </div>
+      <a
+        href="https://drive.google.com/file/d/1QF3ce-MVp7fx5C7QQP_YcYgLqUAx0Ju7/view?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <motion.div
+          initial={{ filter: "blur(6px)", opacity: 0 }}
+          animate={{ filter: "blur(0px)", opacity: 1 }}
+          whileHover={{
+            scale: 1.05,
+            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.2)",
+          }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="connections flex items-center gap-2 border w-max p-2 mt-4 rounded-2xl cursor-pointer font-medium"
+        >
+          View Resume
+          <FaGoogleDrive />
+        </motion.div>
+      </a>
+    </div>
       <div className="flex flex-wrap gap-2 mt-8">
         {[
           { icon: <FaJs className="w-4 h-4" />, label: "Javascript" },

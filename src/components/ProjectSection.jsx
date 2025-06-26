@@ -151,7 +151,7 @@ const ProjectShowcase = () => {
     <>
     <ScrollToTop/>
       <div
-        className={`min-h-screen w-full mt-25 pb-7 ${
+        className={`min-h-screen w-full pt-25 pb-7 ${
           !theme ? "bg-white" : "bg-zinc-950"
         } flex justify-center items-center flex-col`}
       >
