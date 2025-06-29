@@ -11,10 +11,6 @@ function Navbar() {
   const [themes, setthemes] = useState(true);
   const theme = useSelector((store) => store.app.theme);
   const dispatch = useDispatch();
-  // function handleChange(){
-  //   setthemes(!themes)
-  //   dispatch(changeTheme(!theme))
-  // }
 
   return (
     <>
@@ -53,7 +49,7 @@ function Navbar() {
             <Link to="/projects">Projects</Link>
           </li>
           <li className="hover:text-cyan-300">
-            <Link to="/projects">About</Link>
+            <Link to="/education">Education</Link>
           </li>
           {/* <li className="hover:text-cyan-300">Resources</li> */}
         </ul>
@@ -100,7 +96,7 @@ function Navbar() {
               className="hover:text-cyan-300"
               onClick={() => setMenuOpen(false)}
             >
-              <Link to="/about">About</Link>
+              <Link to="/education">Education</Link>
             </li>
           </motion.ul>
         )}

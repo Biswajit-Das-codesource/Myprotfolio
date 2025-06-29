@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import ProjectsSection from "./components/Projects.jsx";
 import All from "./components/All.jsx";
 import ProjectShowcase from "./components/ProjectSection.jsx";
+import EducationTimeline from "./components/About.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path:"/projects",
         element:<ProjectShowcase/>
+      },
+       {
+        path:"/education",
+        element:<EducationTimeline/>
       }
     ]
   },
