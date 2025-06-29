@@ -76,9 +76,7 @@ const AboutPage = () => {
               <h1 className="text-4xl font-bold mb-2 flex items-center gap-2">
                 Biswajit Das
               </h1>
-              <p className="text-sm text-gray-400">
-                📞 Contact: +91-9348269040| 💬 WhatsApp: +91-9348269040
-              </p>
+            
               <p className="mt-2 text-base text-gray-400">
                 Passionate full-stack developer continuously exploring and
                 building real-world projects. Daily learner with a strong
@@ -126,11 +124,11 @@ const AboutPage = () => {
                     {entry.title}
                   </h4>
 
-                  <ul className="space-y-2.5 px-8 py-2">
+                  <ul className="space-y-2.5 px-2 md:px-8 py-2">
                     {entry.description.map((line, idx) => (
                       <li
                         key={idx}
-                        className="flex items-start gap-2 text-zinc-400 text-[15px] leading-relaxed"
+                        className="flex items-start gap-2 text-zinc-400  text-[15px] leading-relaxed"
                       >
                         <CheckCircle2 className="w-4 h-4 text-sky-400 mt-[2px]" />
                         <span>{line}</span>
