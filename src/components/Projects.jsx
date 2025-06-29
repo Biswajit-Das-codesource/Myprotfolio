@@ -15,56 +15,6 @@ import { motion } from "framer-motion";
 import ScrollToTop from "./ScrollToTop";
 import { CheckCircle2 } from "lucide-react";
 
-const projects = [
-  {
-    title: "Webby AI",
-    description:
-      "It is an advanced AI-powered application that utilizes Google's Gemini API to fetch and process data efficiently.",
-    tags: ["Gemini API", "React", "TailwindCSS"],
-    icon: <FaRocket size={"2rem"} />,
-    link: "https://github.com/Biswajit-Das-codesource/Webby-AI",
-  },
-  {
-    title: "Code Twitter",
-    description:
-      "Building modern applications that help users share their code manually, allowing others to view.",
-    tags: ["MongoDB", "Express", "Node.js", "React", "TailwindCSS"],
-    icon: <FaLaptopCode size={"2rem"} />,
-    link: "https://github.com/Biswajit-Das-codesource/Code_Saver-webby-",
-  },
-  {
-    title: "Node Saver",
-    description:
-      "A note-taking application where users can save and manage their notes. Uses Firebase for backend and authentication.",
-    tags: ["Firebase", "React", "TailwindCSS"],
-    icon: <SiFirebase size={"2rem"} />,
-    link: "https://github.com/Biswajit-Das-codesource/Note-saver-Firebase-",
-  },
-  {
-    title: "WebbyUI",
-    description:
-      "A modern UI library for scalable, maintainable web development. Ideal for TSX & JSX in web development.",
-    tags: ["Shadcn UI", "React", "TailwindCSS", "Express", "MongoDB", "Node.js"],
-    icon: <SiReact size={"2rem"} />,
-    link: "https://github.com/Biswajit-Das-codesource/webbyUI",
-  },
-  {
-    title: "ShortURL Generator",
-    description:
-      "A backend service for generating short URLs that are easy to manage and track.",
-    tags: ["Node.js", "Express"],
-    icon: <SiNodedotjs size={"2rem"} />,
-    link: "https://github.com/Biswajit-Das-codesource/ShortUrl-nodejs",
-  },
-  {
-    title: "Code Saver",
-    description:
-      "A modern web application for storing and managing code snippets efficiently.",
-    tags: ["TailwindCSS", "MongoDB", "Express", "Node.js", "EJS"],
-    icon: <FaDatabase size={"2rem"} />,
-    link: "https://github.com/Biswajit-Das-codesource/code-saver",
-  },
-];
 
 const educationData = [
   {
@@ -125,7 +75,7 @@ const ProjectShowcase = () => {
                 <FaUser /> Biswajit Das
               </h1>
               <p className="text-sm text-gray-400">
-                📞 Contact: +91-XXXXXXXXXX | 💬 WhatsApp: +91-XXXXXXXXXX
+                📞 Contact: +91-9348269040| 💬 WhatsApp: +91-9348269040
               </p>
               <p className="mt-2 text-base text-gray-400">
                 Passionate full-stack developer continuously exploring and building real-world projects. Daily learner with a strong foundation in MERN, Firebase, and UI/UX design systems.
@@ -216,9 +166,7 @@ const ProjectShowcase = () => {
                 },
               }}
             >
-              {projects.map((project, index) => (
-                <ProjectCard key={index} {...project} />
-              ))}
+            
             </motion.div>
           </div>
         </section>
