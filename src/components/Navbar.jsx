@@ -6,6 +6,8 @@ import { IoMoonOutline } from "react-icons/io5";
 import { changeTheme } from "../redux/Slice";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
+
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [themes, setthemes] = useState(true);
@@ -35,6 +37,7 @@ function Navbar() {
             onClick={() => dispatch(changeTheme(!theme))}
           />
         )}
+
 
         {/* Desktop Menu */}
         <ul

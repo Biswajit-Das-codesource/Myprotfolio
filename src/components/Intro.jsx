@@ -18,7 +18,7 @@ import {
   SiFramer,
 } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
-import profilePic from "./me.jpeg"; // Ensure the correct path to the profile picture
+// import profilePic from "./me.jpeg"; // Ensure the correct path to the profile picture
 import { useSelector } from "react-redux";
 import { DiNodejsSmall } from "react-icons/di";
 import { motion } from "framer-motion";
@@ -70,7 +70,7 @@ function Intro() {
         </motion.div>
 
         <motion.img
-          src={profilePic}
+          src="./me.jpeg"
           alt="Profile"
           className="w-22 h-22 border-2 border-gray-300 rounded-2xl hidden md:block mb-4 md:mb-0 md:mr-6"
           initial={{ opacity: 0, scale: 0.9, filter: "blur(8px)" }}
