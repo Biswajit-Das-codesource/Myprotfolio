@@ -15,6 +15,20 @@ import { motion } from "framer-motion";
 import ScrollToTop from "./ScrollToTop";
 
 const projects = [
+   {
+      title: "UIVault",
+      description:
+        "A modern UI library for scalable, maintainable web development. Ideal for TSX & JSX in web development.",
+      tags: [
+        "Shadcn UI",
+        "React",
+        "TailwindCSS",
+        "Three.js",      
+        "Node.js",
+      ],
+      icon: <SiReact size={"2rem"} />,
+      link: "https://github.com/Biswajit-Das-codesource/UI-vault",
+    },
   {
     title: "Webby AI",
     description:
@@ -39,14 +53,7 @@ const projects = [
     icon: <SiFirebase size={"2rem"} />,
     link: "https://github.com/Biswajit-Das-codesource/Note-saver-Firebase-",
   },
-  {
-    title: "WebbyUI",
-    description:
-      "A modern UI library for scalable, maintainable web development. Ideal for TSX & JSX in web development.",
-    tags: ["Shadcn UI", "React", "TailwindCSS", "Express", "MongoDB", "Node.js"],
-    icon: <SiReact size={"2rem"} />,
-    link: "https://github.com/Biswajit-Das-codesource/webbyUI",
-  },
+ 
   {
     title: "ShortURL Generator",
     description:

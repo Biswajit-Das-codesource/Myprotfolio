@@ -112,7 +112,7 @@ function Intro() {
 
       <div className="w-full">
       <a
-        href="https://drive.google.com/file/d/1QF3ce-MVp7fx5C7QQP_YcYgLqUAx0Ju7/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1ni2KFR2U16B4FJIvhRHwwvwrnWrGc1sU/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
